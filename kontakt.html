@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="folketingsmedlem.html">
+    <link rel="stylesheet" href="om.html">
+
+</head>
+<body>
+     <!-- Logo -->
+     <div class="logo">
+        <a href="index.html">
+            <img class="enhedslisten" src="images/enhedslisten.jpg" alt="logo">
+        </a>
+    </div>
+    
+    <!-- Header til links (forside, kontakt, om) -->
+    <div class="header" id="myTopnav">
+      <a href="index.html">Forside</a>
+      <a href="artikel.html">Artikler</a>
+      <a href="om.html">Om</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+    <h1 class="kontakt">Kontakt</h1>
+    <div class="kontaktliste">
+
+      <div>
+        <p>
+          <b>Enhedslistens landskontor</b>
+          <br>
+          Folketinget
+          <br>
+          DK-1240 København K
+          <br>
+          Tel. +45 33 93 33 24
+          <br>
+          CVR-nr. 18289393
+          <br>
+          landskontoret@enhedslisten.dk
+        </p>
+      </div>
+
+      <div class="spacer"></div>
+      
+      <div>
+        <p>
+          <b>Enhedslistens folketingsgruppe</b>
+          <br>
+          Folketinget
+          <br>
+          DK-1240 København K
+          <br>
+          Tel. +45 33 37 50 50
+          <br>
+          christiansborg@enhedslisten.dk
+          <br>
+          E-mail:pelle.dragsted@ft.dk
+        </p>
+      </div>
+
+    </div>
+    <div class="spacer"></div>
+    
+
+
+
+
+    <footer> PELLEDRAGSTED.DK 2023 © ALL RIGHTS RESERVED.</footer>
+
+
+   <!-- Javascript -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "header") {
+            x.className += " responsive";
+          } else {
+            x.className = "header";
+          }
+        }
+        </script>
+</body>
+</html>

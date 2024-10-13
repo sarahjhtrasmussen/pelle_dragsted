@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Top navigation */
+
+.header {
+    overflow: hidden;
+    background-color: #D0004D;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.header a{
+    color:#E5E5E5;
+    text-decoration: none;
+    padding:30px;
+    padding-bottom: 30px;
+}
+
+.logo{
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+.enhedslisten {
+    width:40px;
+    height:40px;
+    
+}
+
+.header a:hover{
+    background-color: #E5E5E5;
+    color: #D0004D;
+}
+
+.header .icon {
+    display: none;
+}
+
+
+/* Forside (header, billede og intro tekst om Pelle) */
+
+.kandidat{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.kandidat img{
+    width:100%;
+}
+
+
+.titel{
+    color: #D0004D;
+}
+
+.artikel-titel{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.tekst{
+    font-size: 14px;
+    padding: 20px 20px;
+    text-align:left;
+    line-height: 20px;
+}
+
+.spacer{
+    padding-bottom: 50px;
+}
+
+
+/* Artikel side */
+
+.date {
+    color:#7f7c7c;
+    font-size: 13px;
+}
+
+.seneste {
+    align-items: left;
+
+}
+
+.seneste .artikler{
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* Mærkesager på forside*/
+
+.maerkesag{
+    font-size: 14px;
+    padding: 0px 40px 40px 15px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.list{
+   padding: 5px 0px 0px 15px;
+    
+}
+
+.farve{
+    color: #159F6B;
+}
+
+/* Footer */
+
+footer{
+    background-color: #D0004D;
+    color: #E5E5E5;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* "Om Pelle" side */
+
+.om {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    line-height: 24px;
+}
+
+
+.portrait {
+    width: 99%;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.about{
+    padding-bottom: 10px;
+    color:#159F6B;
+}
+
+
+/* Kontakt side */
+
+.kontakt{
+    padding:50px;
+}
+.kontaktliste{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px;
+    padding-left: 50px;
+    justify-content: space-around;
+    font-size: medium;
+    text-align: left;
+    flex-direction: column;
+    
+}
+
+@media screen and (max-width: 700px) {
+
+/* Top Navigation */
+   
+    .header .icon {
+        display:block;
+    }
+    .header a {
+        display:none;
+    }
+    
+    .responsive a {
+        display:block;
+    }
+
+    .responsive {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+
+    }
+
+    .responsive .icon {
+        position:absolute;
+        top:0;
+        right:0;
+    }    
+
+    
+}
+
+@media screen and (min-width:700px) and (max-width:1075px){
+   
+   /* Alt andet fra 700px til 1075px */
+   
+   .kontaktliste{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 40px;
+    padding-left: 50px;
+    justify-content:space-evenly;
+    font-size: medium;
+    text-align: left;}
+    
+    .tekst .kandidat {
+        flex-direction: row;
+    }
+
+    .forside{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .maerkesag {
+        padding-top: 100px;
+    }
+   
+
+    .om{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 50px;
+        
+    }
+
+    .cv{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .historie{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .portrait{
+        padding-top: 50px;
+    }
+    .seneste-artikler{
+      display: flex;
+      
+    }
+   
+    .artikeldiv{
+        width:100%;
+        
+    }
+
+}   
+
+
+
+@media screen and (min-width:1075px){
+
+    /* Justeringer fra 1075px og op */
+
+    .kontaktliste{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 40px;
+        padding-left: 50px;
+        justify-content:space-evenly;
+        font-size: medium;
+        text-align: left;
+    }
+
+    .forside{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .maerkesag {
+        padding-top: 100px;
+    }
+
+    .tekst .kandidat {
+        flex-direction: row;}
+
+    
+    .historie{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .om{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 100px;
+        
+    }
+
+    .cv{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .portrait{
+        padding-top: 50px;
+    }
+
+    .artikeldiv {
+        display: flex;
+    }
+}
+
+
